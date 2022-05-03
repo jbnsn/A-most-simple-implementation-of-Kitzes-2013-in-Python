@@ -89,7 +89,7 @@ L_decomposed = {
     'Tenth production layer'   : np.linalg.matrix_power(A,10),
     }
 
-# sum(L_decomposed.values()) is approximately L = np.linalg.inv(I - A) 
+# sum(L_decomposed.values()) ≈ np.linalg.inv(I - A) 
 
 # Leontief inverse
 L_series = sum(L_decomposed.values())
