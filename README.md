@@ -29,4 +29,11 @@ Manufacturing    7.060348
 dtype: float64
 ```
 
+|                             |               | Leontief inverse-based results | Series expansion-based results |
+|-----------------------------|---------------|--------------------------------|--------------------------------|
+| Production-based inventory  | Agriculture   | 8.00000                        | 7.826207                       |
+| Production-based inventory  | Manufacturing | 4.00000                        | 3.945339                       |
+| Consumption-based inventory | Agriculture   | 4.80000                        | 4.711197                       |
+| Consumption-based inventory | Manufacturing | 7.20000                        | 7.060348                       |
+
 Note: [Pymrio](https://github.com/konstantinstadler/pymrio) is a comprehensive package for Multi-Regional Input-Output Analysis (MRIO) in Python.
