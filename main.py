@@ -86,17 +86,17 @@ print(E_consumption_based)
 
 # Total intensities (first eleven production layers)
 F_Series = {
-    'Zeroth production layer' : I,
-    'First production layer' : np.linalg.matrix_power(A,1),
-    'Second production layer' : np.linalg.matrix_power(A,2),
-    'Third production layer' : np.linalg.matrix_power(A,3),
-    'Fourth production layer' : np.linalg.matrix_power(A,4),
-    'Fifth production layer' : np.linalg.matrix_power(A,5),
-    'Sixth production layer' : np.linalg.matrix_power(A,6),
-    'Seventh production layer' : np.linalg.matrix_power(A,7),
-    'Eight production layer' : np.linalg.matrix_power(A,8),
-    'Ninth production layer' : np.linalg.matrix_power(A,9),
-    'Tenth production layer' : np.linalg.matrix_power(A,10),
+    'Zeroth production layer'  : I,
+    'First production layer'   : np.linalg.matrix_power(A, 1),
+    'Second production layer'  : np.linalg.matrix_power(A, 2),
+    'Third production layer'   : np.linalg.matrix_power(A, 3),
+    'Fourth production layer'  : np.linalg.matrix_power(A, 4),
+    'Fifth production layer'   : np.linalg.matrix_power(A, 5),
+    'Sixth production layer'   : np.linalg.matrix_power(A, 6),
+    'Seventh production layer' : np.linalg.matrix_power(A, 7),
+    'Eight production layer'   : np.linalg.matrix_power(A, 8),
+    'Ninth production layer'   : np.linalg.matrix_power(A, 9),
+    'Tenth production layer'   : np.linalg.matrix_power(A,10),
     }
 
 # sum(F_Series.values()) is an approxiamtion of L 
