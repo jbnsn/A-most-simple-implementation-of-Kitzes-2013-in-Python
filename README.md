@@ -29,4 +29,4 @@ Manufacturing    7.060348
 dtype: float64
 ```
 
-[Pymrio](https://github.com/konstantinstadler/pymrio) is a package for Multi-Regional Input-Output Analysis (MRIO) in Python.
+[Pymrio](https://github.com/konstantinstadler/pymrio) is a comprehensive package for Multi-Regional Input-Output Analysis (MRIO) in Python.
