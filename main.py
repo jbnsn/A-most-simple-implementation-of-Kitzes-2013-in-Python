@@ -9,7 +9,7 @@ Resources 2 (4): 489–503. https://doi.org/10.3390/resources2040489.
 import numpy as np
 import pandas as pd
 
-# Sectors
+# Sector names
 T_idx = ['Agriculture','Manufacturing']
 
 # Transaction matrix
@@ -52,40 +52,30 @@ f = np.diag(
 L = np.linalg.inv(I - A) 
 
 # Total intensities
-F = np.dot(f,L)
+F_linverse = np.dot(f,L)
 
 # Scale to final demand
-E = np.multiply(F,y)
+E_linverse = np.multiply(F_linverse,y)
 
 # Turn NumPy Array into Pandas DataFrame with indexed rows and columns
-E = pd.DataFrame(
-    E,
+E_linverse = pd.DataFrame(
+    E_linverse,
     index = T_idx,
     columns = T_idx
     )
 
-# Production-based inventory
-E_production_based = (
-    E.sum(axis=1) # Rows/Outputs/Production
-    )
-
-# Consumption-based inventory
-E_consumption_based = (
-    E.sum(axis=0) # Columns/Inputs/Consumption
-    )
-
 print('\n>>> Leontief inverse-based results:')
 print('\nProduction-based-inventory:')
-print(E_production_based)
+print(E_linverse.sum(axis=1))
 print('\nConsumption-based-inventory:')
-print(E_consumption_based)
+print(E_linverse.sum(axis=0))
 
 # =============================================================================
 # Series expansion-based calculation approach (approximation)
 # =============================================================================
 
 # Total intensities (first eleven production layers)
-F_Series = {
+L_decomposed = {
     'Zeroth production layer'  : I,
     'First production layer'   : np.linalg.matrix_power(A, 1),
     'Second production layer'  : np.linalg.matrix_power(A, 2),
@@ -99,32 +89,22 @@ F_Series = {
     'Tenth production layer'   : np.linalg.matrix_power(A,10),
     }
 
-# sum(F_Series.values()) is an approxiamtion of L 
+# sum(L_decomposed.values()) is an approxiamtion of L 
 # Multiplication with f returns F
-F = np.dot(f,sum(F_Series.values()))
+F_series = np.dot(f,sum(L_decomposed.values()))
 
 # Scale to final demand
-E = np.multiply(F,y)
+E_series = np.multiply(F_series,y)
 
 # Turn NumPy Array into Pandas DataFrame with indexed rows and columns
-E = pd.DataFrame(
-    E,
+E_series = pd.DataFrame(
+    E_series,
     index = T_idx,
     columns = T_idx
     )
 
-# Production-based inventory
-E_production_based = (
-    E.sum(axis=1) # Rows/Outputs/Production
-    )
-
-# Consumption-based inventory
-E_consumption_based = (
-    E.sum(axis=0) # Columns/Inputs/Consumption
-    )
-
 print('\n>>> Series expansion-based results:')
 print('\nProduction-based-inventory:')
-print(E_production_based)
+print(E_series.sum(axis=1))
 print('\nConsumption-based-inventory:')
-print(E_consumption_based)
+print(E_series.sum(axis=0))
