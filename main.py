@@ -49,10 +49,10 @@ f = np.diag(
 # =============================================================================
 
 # Leontief inverse
-L = np.linalg.inv(I - A) 
+L_linverse = np.linalg.inv(I - A) 
 
 # Total intensities
-F_linverse = np.dot(f,L)
+F_linverse = np.dot(f,L_linverse)
 
 # Scale to final demand
 E_linverse = np.multiply(F_linverse,y)
@@ -89,9 +89,13 @@ L_decomposed = {
     'Tenth production layer'   : np.linalg.matrix_power(A,10),
     }
 
-# sum(L_decomposed.values()) is an approximation of L = np.linalg.inv(I - A) 
-# Multiplication with f returns F
-F_series = np.dot(f,sum(L_decomposed.values()))
+# sum(L_decomposed.values()) is approximately L = np.linalg.inv(I - A) 
+
+# Leontief inverse
+L_series = sum(L_decomposed.values())
+
+# Total intensities
+F_series = np.dot(f,L_series)
 
 # Scale to final demand
 E_series = np.multiply(F_series,y)
