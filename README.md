@@ -4,6 +4,8 @@ The file [`main.py`](main.py) contains a most simple implementation of [Kitzes (
 
 > Kitzes, Justin. 2013. ‘An Introduction to Environmentally-Extended Input-Output Analysis’. Resources 2 (4): 489–503. [https://doi.org/10.3390/resources2040489](https://doi.org/10.3390/resources2040489).
 
+**Note: [Pymrio](https://github.com/konstantinstadler/pymrio) is a comprehensive package for Multi-Regional Input-Output Analysis (MRIO) in Python.**
+
 Output of [`main.py`](main.py):
 ```Txt
 >>> Leontief inverse-based results:
@@ -41,5 +43,3 @@ dtype: float64
 | Consumption-based inventory | Manufacturing | 7.20000                        | 7.060348                           |
 
 [^1]: Calculated for the first eleven production layers (see [`main.py`](main.py)).
-
-Note: [Pymrio](https://github.com/konstantinstadler/pymrio) is a comprehensive package for Multi-Regional Input-Output Analysis (MRIO) in Python.
