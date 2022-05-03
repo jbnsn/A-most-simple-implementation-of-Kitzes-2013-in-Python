@@ -40,6 +40,6 @@ dtype: float64
 | Consumption-based inventory | Agriculture   | 4.80000                        | 4.711197                           |
 | Consumption-based inventory | Manufacturing | 7.20000                        | 7.060348                           |
 
-Note: [Pymrio](https://github.com/konstantinstadler/pymrio) is a comprehensive package for Multi-Regional Input-Output Analysis (MRIO) in Python.
-
 [^1]: Calculated for the first eleven production layers (see [`main.py`](main.py)).
+
+Note: [Pymrio](https://github.com/konstantinstadler/pymrio) is a comprehensive package for Multi-Regional Input-Output Analysis (MRIO) in Python.
