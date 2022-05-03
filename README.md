@@ -6,7 +6,7 @@ The file [`main.py`](main.py) contains a most simple implementation of [Kitzes (
 
 _Note: [Pymrio](https://github.com/konstantinstadler/pymrio) is a comprehensive package for Multi-Regional Input-Output Analysis (MRIO) in Python._
 
-## Output of [`main.py`](main.py):
+## Results overview
 
 | Inventory           | Sector        | Leontief inverse-based results | Series expansion-based results[^1] |
 |---------------------|---------------|--------------------------------|------------------------------------|
@@ -14,6 +14,8 @@ _Note: [Pymrio](https://github.com/konstantinstadler/pymrio) is a comprehensive 
 | Production-based    | Manufacturing | 4.00000                        | 3.945339                           |
 | Consumption-based   | Agriculture   | 4.80000                        | 4.711197                           |
 | Consumption-based   | Manufacturing | 7.20000                        | 7.060348                           |
+
+### Output of [`main.py`](main.py)
 
 ```Txt
 >>> Leontief inverse-based results:
