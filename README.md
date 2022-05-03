@@ -1,4 +1,4 @@
-A most simple implementation of [Kitzes (2013](https://doi.org/10.3390/resources2040489) in Python with [NumPy](https://numpy.org/) and [Pandas](https://pandas.pydata.org/).
+The file `main.py` contains a most simple implementation of [Kitzes (2013](https://doi.org/10.3390/resources2040489) in Python with [NumPy](https://numpy.org/) and [Pandas](https://pandas.pydata.org/).
 
 Kitzes, Justin. 2013. ‘An Introduction to Environmentally-Extended Input-Output Analysis’. Resources 2 (4): 489–503. [https://doi.org/10.3390/resources2040489](https://doi.org/10.3390/resources2040489).
 
