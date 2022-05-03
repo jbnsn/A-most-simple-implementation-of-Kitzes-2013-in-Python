@@ -10,10 +10,10 @@ _Note: [Pymrio](https://github.com/konstantinstadler/pymrio) is a comprehensive 
 
 | Inventory           | Sector        | Leontief inverse-based results | Series expansion-based results[^1] |
 |---------------------|---------------|--------------------------------|------------------------------------|
-| Production-based    | Agriculture   | 8.00000                        | 7.826207                           |
-| Production-based    | Manufacturing | 4.00000                        | 3.945339                           |
-| Consumption-based   | Agriculture   | 4.80000                        | 4.711197                           |
-| Consumption-based   | Manufacturing | 7.20000                        | 7.060348                           |
+| Production-based    | Agriculture   | 8.00000                        | 7.826207 (97.82%)                  |
+| Production-based    | Manufacturing | 4.00000                        | 3.945339 (98.63%)                  |
+| Consumption-based   | Agriculture   | 4.80000                        | 4.711197 (98.15%)                  |
+| Consumption-based   | Manufacturing | 7.20000                        | 7.060348 (98.06%)                  |
 
 ### Output of [`main.py`](main.py)
 
