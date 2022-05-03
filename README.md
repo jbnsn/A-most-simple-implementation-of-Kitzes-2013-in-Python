@@ -8,12 +8,12 @@ _Note: [Pymrio](https://github.com/konstantinstadler/pymrio) is a comprehensive 
 
 ## Output of [`main.py`](main.py):
 
-|                             | Sector        | Leontief inverse-based results | Series expansion-based results[^1] |
-|-----------------------------|---------------|--------------------------------|------------------------------------|
-| Production-based inventory  | Agriculture   | 8.00000                        | 7.826207                           |
-| Production-based inventory  | Manufacturing | 4.00000                        | 3.945339                           |
-| Consumption-based inventory | Agriculture   | 4.80000                        | 4.711197                           |
-| Consumption-based inventory | Manufacturing | 7.20000                        | 7.060348                           |
+| Invento           | Sector        | Leontief inverse-based results | Series expansion-based results[^1] |
+|-------------------|---------------|--------------------------------|------------------------------------|
+| Production-based  | Agriculture   | 8.00000                        | 7.826207                           |
+| Production-based  | Manufacturing | 4.00000                        | 3.945339                           |
+| Consumption-based | Agriculture   | 4.80000                        | 4.711197                           |
+| Consumption-based | Manufacturing | 7.20000                        | 7.060348                           |
 
 ```Txt
 >>> Leontief inverse-based results:
