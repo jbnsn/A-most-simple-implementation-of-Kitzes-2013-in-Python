@@ -89,7 +89,7 @@ L_decomposed = {
     'Tenth production layer'   : np.linalg.matrix_power(A,10),
     }
 
-# sum(L_decomposed.values()) is an approxiamtion of L 
+# sum(L_decomposed.values()) is an approximation of L = np.linalg.inv(I - A) 
 # Multiplication with f returns F
 F_series = np.dot(f,sum(L_decomposed.values()))
 
