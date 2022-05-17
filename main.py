@@ -12,6 +12,10 @@ import pandas as pd
 # Sector names
 T_idx = ['Agriculture','Manufacturing']
 
+# =============================================================================
+# IO basics
+# =============================================================================
+
 # Transaction matrix
 T = np.array([
     [8, 5],
