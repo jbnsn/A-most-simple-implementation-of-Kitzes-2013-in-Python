@@ -22,12 +22,7 @@ T = np.array([
     [4, 2]
     ])
 
-# Total output
-x_out = np.array(
-    [16,12]
-    )
-
-# Satellite accounts
+# Satellite accounts (1-dimensional array)
 q = np.array(
     [8,4]
     )
@@ -35,6 +30,12 @@ q = np.array(
 # Final demand
 y = np.array(
     [3,6]
+    )
+
+# Total output
+x_out = (
+    T.sum(axis=1)
+    + y
     )
 
 # Identity matrix
@@ -54,10 +55,6 @@ f = np.diag(
 
 # Leontief inverse
 L_linverse = np.linalg.inv(I - A) 
-
-
-from scipy.linalg import lu
-test = lu((I-A))
 
 # Total intensities
 F_linverse = np.dot(f,L_linverse)
