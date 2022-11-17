@@ -1,4 +1,4 @@
-# Readme
+# A most simple implementation of Kitzes (2013) in Python.
 
 The file [`main.py`](main.py) contains a most simple implementation of [Kitzes (2013)](https://doi.org/10.3390/resources2040489) in Python with the packages [NumPy](https://numpy.org/) and [Pandas](https://pandas.pydata.org/).
 
