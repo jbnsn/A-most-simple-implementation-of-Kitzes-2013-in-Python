@@ -70,15 +70,15 @@ E_linverse = pd.DataFrame(
 
 print('\n>>> Leontief inverse-based results:')
 print('\nProduction-based-inventory:')
-print(E_linverse.sum(axis=1))  # Rows/Outputs
+print(E_linverse.sum(axis=1))  # Outputs/Production (Rows)
 print('\nConsumption-based-inventory:')
-print(E_linverse.sum(axis=0))  # Columns/Inputs
+print(E_linverse.sum(axis=0))  # Inputs/Consumption (Columns)
 
 # =============================================================================
 # Series expansion-based calculation approach (approximation)
 # =============================================================================
 
-# Total intensities (first X production layers)
+# Total intensities (first ten production layers)
 L_decomposed = {
     'Zeroth production layer': IM,
     'First production layer': np.linalg.matrix_power(A, 1),
@@ -113,6 +113,6 @@ E_series = pd.DataFrame(
 
 print('\n>>> Series expansion-based results:')
 print('\nProduction-based-inventory:')
-print(E_series.sum(axis=1))  # Rows/Outputs
+print(E_series.sum(axis=1))  # Outputs/Production (Rows)
 print('\nConsumption-based-inventory:')
-print(E_series.sum(axis=0))  # Columns/Inputs
+print(E_series.sum(axis=0))  # Inputs/Consumption (Columns)
