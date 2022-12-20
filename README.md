@@ -1,6 +1,6 @@
 # A most simple implementation of Kitzes (2013) in Python.
 
-The file [`kitzes-2013.py`](kitzes-2013.py) contains a most simple implementation of [Kitzes (2013)](https://doi.org/10.3390/resources2040489) in Python with the packages [NumPy](https://numpy.org/) and [Pandas](https://pandas.pydata.org/). It supplements [Bunsen and Finkbeiner (2023)](https://doi.org/10.3390/su15010046) and is also available via Zenodo ([Bunsen 2022](https://doi.org/10.5281/zenodo.7431089)). When working with this script, a reference is not mandatory.
+The file [`kitzes-2013.py`](kitzes-2013.py) contains a most simple implementation of [Kitzes (2013)](https://doi.org/10.3390/resources2040489) in Python with the packages [NumPy](https://numpy.org/) and [Pandas](https://pandas.pydata.org/). It supplements [Bunsen and Finkbeiner (2023)](https://doi.org/10.3390/su15010046) and is also available via Zenodo ([Bunsen 2022](https://doi.org/10.5281/zenodo.7431089)). When working with this script, an acknowledgement is appreciated but by no means mandatory.
 
 _Note: [Pymrio](https://github.com/konstantinstadler/pymrio) is a comprehensive package for Multi-Regional Input-Output Analysis (MRIO) in Python._
 
