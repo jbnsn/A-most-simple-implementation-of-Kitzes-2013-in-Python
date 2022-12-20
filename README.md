@@ -1,6 +1,6 @@
 # A most simple implementation of Kitzes (2013) in Python.
 
-The file [`kitzes-2013.py`](kitzes-2013.py) contains a most simple implementation of [Kitzes (2013)](https://doi.org/10.3390/resources2040489) in Python with the packages [NumPy](https://numpy.org/) and [Pandas](https://pandas.pydata.org/). It supplements [Bunsen and Finkbeiner (2013)](https://doi.org/10.3390/su15010046) and is also available via Zenodo ([Bunsen 2022](https://doi.org/10.5281/zenodo.7431089)). However, no reference is required when building up on this script.
+The file [`kitzes-2013.py`](kitzes-2013.py) contains a most simple implementation of [Kitzes (2013)](https://doi.org/10.3390/resources2040489) in Python with the packages [NumPy](https://numpy.org/) and [Pandas](https://pandas.pydata.org/). It supplements [Bunsen and Finkbeiner (2013)](https://doi.org/10.3390/su15010046) and is also available via Zenodo ([Bunsen 2022](https://doi.org/10.5281/zenodo.7431089)). When working with this script, a reference is not mandatory.
 
 > Bunsen, Jonas. 2022. ‘A Most Simple Implementation of Kitzes (2013) in Python’. Zenodo. https://doi.org/10.5281/zenodo.7431089.
 
